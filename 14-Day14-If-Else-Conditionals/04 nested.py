@@ -1,12 +1,18 @@
-num = 18
-if (num < 0):
-    print("Number is negative.")
-elif (num > 0):
-    if (num <= 10):
-        print("Number is between 1-10")
-    elif (num > 10 and num <= 20):
-        print("Number is between 11-20")
-    else:
-        print("Number is greater than 20")
+name = input("Enter your name : ").upper()
+
+current_time = time.strftime('%HH:%MM:%SS')
+print("Your current time is : ", current_time)
+
+if(('01:00:00') <= current_time < ('14:00:00') ):
+    print("Good Morning", name, "☀🌄","Have a nice day!!")
+   
+
+elif(('14:00:00') <= current_time < ('16:00:00') ):
+    print("Good Afternoon", name, "🌞", "Go to outside for a while and enjoy the Nature")
+
+elif(('16:00:00') <= current_time < ('21:00:00') ):
+    print("Good Evening", name, "🌇", "Try to come back home and spend some time with your Family ")
+
 else:
-    print("Number is zero")
+    print("Good night", name, "🌆")
+    print("Go to the Bed for your sweet dreams!!")
